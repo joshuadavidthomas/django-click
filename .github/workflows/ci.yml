@@ -13,7 +13,6 @@ jobs:
       fail-fast: false
       matrix:
         python-version:
-          - "3.8"
           - "3.9"
           - "3.10"
           - "3.11"
@@ -22,9 +21,7 @@ jobs:
           - "dj42" # LTS
           - "dj50"
         exclude:
-          # Python 3.8/3.9 is incompatible with Django 5.0+
-          - python-version: "3.8"
-            tox-env: "dj50"
+          # Python 3.9 is incompatible with Django 5.0+
           - python-version: "3.9"
             tox-env: "dj50"
 
