@@ -26,7 +26,7 @@ Automated code metrics:
 
 * Free software: MIT license
 * Documentation for the Click command line library: https://click.palletsprojects.com/en/stable/
-* Compatible with Django 4.2 and 5.0 running on Python 3.9, 3.10, 3.11, and 3.12 (note: 3.10+ required for Django 5.0).
+* Compatible with Django 4.2 and 5.0 running on Python 3.10, 3.11, and 3.12 (note: 3.10+ required for Django 5.0).
 
 
 Installation
