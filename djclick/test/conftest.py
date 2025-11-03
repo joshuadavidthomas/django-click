@@ -29,7 +29,7 @@ def manage():
 def call_command():
     from django.core.management import call_command
 
-    class CallCommand(object):
+    class CallCommand:
         def __init__(self):
             self.io = BytesIO()
 

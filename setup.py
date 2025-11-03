@@ -32,7 +32,7 @@ if sys.argv[-1] == "publish":
     sys.exit()
 
 
-class Setup(object):
+class Setup:
     @staticmethod
     def read(fname, fail_silently=False):
         """
@@ -41,7 +41,7 @@ class Setup(object):
         """
         try:
             filepath = os.path.join(os.path.dirname(__file__), fname)
-            with io.open(filepath, "rt", encoding="utf8") as f:
+            with open(filepath, encoding="utf8") as f:
                 return f.read()
         except:
             if not fail_silently:
@@ -90,7 +90,7 @@ class Setup(object):
     def get_metavar(name):
         data = Setup.read(os.path.join(PACKAGE, "__init__.py"))
         value = (
-            re.search(u"__{}__\s*=\s*u?'([^']+)'".format(name), data).group(1).strip()
+            re.search(fr"__{name}__\s*=\s*u?'([^']+)'", data).group(1).strip()
         )
         return value
 
