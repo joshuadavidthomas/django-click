@@ -41,5 +41,5 @@ def test_convert_fail(call_command, args, error_message):
     # Use `.endswith()` because of differences between CPython and pypy
     assert e.type is BadParameter
     assert str(e.value).endswith(
-        "could not find testapp.DummyModel with {}".format(error_message)
+        f"could not find testapp.DummyModel with {error_message}"
     )
