@@ -51,7 +51,7 @@ class, just put a ``djclick`` command into
    @click.command()
    @click.argument('name')
    def command(name):
-       click.secho('Hello, {}'.format(name), fg='red')
+       click.secho(f'Hello, {name}', fg='red')
 
 And then call the command with::
 
