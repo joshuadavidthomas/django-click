@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import io
 import os
 import re
 import sys
@@ -42,7 +41,7 @@ class Setup:
             filepath = os.path.join(os.path.dirname(__file__), fname)
             with open(filepath, encoding="utf8") as f:
                 return f.read()
-        except:
+        except Exception:
             if not fail_silently:
                 raise
             return ""
@@ -66,7 +65,7 @@ class Setup:
         pattern = os.path.join(os.path.dirname(__file__), glob_pattern)
         requirements = {}
         for path in glob.glob(pattern):
-            name = path[len(before) : -len(after)]
+            name = path[len(before): -len(after)]
             requirements[name] = cls.requirements(path)
         return requirements
 
