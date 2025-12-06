@@ -13,6 +13,8 @@ PACKAGE_NAME = "django-click"
 DESCRIPTION = "Build Django management commands using the click CLI package."
 CLASSIFIERS = [
     "Development Status :: 4 - Beta",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
