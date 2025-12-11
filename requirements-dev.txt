@@ -4,13 +4,6 @@
 wheel
 check-manifest
 
-# Code linting
-flake8
-mccabe
-pep8
-pep8-naming
-pyflakes
-
 # Documentation
 Sphinx
 sphinx-autobuild
