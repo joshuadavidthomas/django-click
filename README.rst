@@ -16,6 +16,14 @@ Project information:
 .. image:: https://img.shields.io/pypi/l/django-click.svg
    :target: https://github.com/GaretJax/django-click/blob/master/LICENSE
 
+.. |python-support| image:: https://img.shields.io/pypi/pyversions/django-click
+   :target: https://pypi.python.org/pypi/django-click
+   :alt: Supported Python versions
+
+.. |django-support| image:: https://img.shields.io/pypi/djversions/django-click
+   :target: https://pypi.python.org/pypi/django-click
+   :alt: Supported Django versions
+
 Automated code metrics:
 
 .. image:: https://img.shields.io/coveralls/GaretJax/django-click/master.svg
@@ -27,6 +35,7 @@ Automated code metrics:
 * Free software: MIT license
 * Documentation for the Click command line library: https://click.palletsprojects.com/en/stable/
 * Compatible with Django 4.2, 5.2 and 6.0 running on Python 3.10, 3.11, 3.12, 3.13 and 3.14
+
   * 3.10+ required for Django 5.2 and above
   * 3.12+ required for Django 6.0 and above
 
